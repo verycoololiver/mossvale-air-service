@@ -1,0 +1,32 @@
+config_version=5
+
+[application]
+config/name="Mossvale Air Service — Visual Study"
+config/icon="res://icon.svg"
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+
+[display]
+window/size/viewport_width=1440
+window/size/viewport_height=900
+window/size/window_width_override=1280
+window/size/window_height_override=800
+window/size/min_width=960
+window/size/min_height=600
+window/stretch/mode="canvas_items"
+window/dpi/allow_hidpi.web=false
+
+[gui]
+theme/custom_font="res://assets/ui_font.ttf"
+
+[rendering]
+renderer/rendering_method="mobile"
+renderer/rendering_method.web="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/msaa_3d.web=0
+lights_and_shadows/directional_shadow/size=2048
+lights_and_shadows/directional_shadow/size.web=1024
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=1
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality.web=0
+environment/defaults/default_clear_color=Color(0.18,0.28,0.32,1)
